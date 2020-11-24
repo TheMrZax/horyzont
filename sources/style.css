@@ -236,7 +236,15 @@
 
 .glowna article.wsparcie p.wazne {
     margin-top: 5px;
+}
+
+.glowna article.wsparcie p.kopiuj-tekst {
     cursor: pointer;
+    transition: .2s;
+}
+
+.glowna article.wsparcie p.kopiuj-tekst:hover {
+    opacity: .7;
 }
 
 .glowna.wsparcie {

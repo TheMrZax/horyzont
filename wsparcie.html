@@ -46,14 +46,15 @@
             <a href="https://www.facebook.com/maciej.ozga.77" target="_blank" class="kwatermistrz"><i class="fab fa-facebook-square"></i>Maciej Ozga</a>
             <a href="https://www.facebook.com/harcesh" target="_blank" class="kwatermistrz"><i class="fab fa-facebook-square"></i>Adam Zajączkowski</a>
             <h2>Jeśli chciałbyś przekazać w formie pienieżnej:</h2>
-            <p class="wazne" data-clipboard-text="Darowizna dla 64.RDW" title="Skopiuj tekst do schowka">W tytule należy wpisać:</p>
-            <p>Darowizna dla 64.RDW <i class="far fa-clipboard" data-clipboard-text="Darowizna dla 64.RDW" title="Skopiuj tekst do schowka"></i></p>
 
-            <p class="wazne" data-clipboard-text="Chorągiew Mazowiecka ZHP Hufiec Radom-Miasto" title="Skopiuj tekst do schowka">Dane do przelewu:</p>
-            <p>Chorągiew Mazowiecka ZHP Hufiec Radom-Miasto <i class="far fa-clipboard" data-clipboard-text="Chorągiew Mazowiecka ZHP Hufiec Radom-Miasto" title="Skopiuj tekst do schowka"></i></p>
+            <p class="wazne">W tytule należy wpisać:</p>
+            <p data-clipboard-text="Darowizna dla 64.RDW" title="Skopiuj tekst do schowka" class="kopiuj-tekst">Darowizna dla 64.RDW <i class="far fa-clipboard" data-clipboard-text="Darowizna dla 64.RDW" title="Skopiuj tekst do schowka"></i></p>
+
+            <p class="wazne">Dane do przelewu:</p>
+            <p data-clipboard-text="Chorągiew Mazowiecka ZHP Hufiec Radom-Miasto" title="Skopiuj tekst do schowka" class="kopiuj-tekst">Chorągiew Mazowiecka ZHP Hufiec Radom-Miasto <i class="far fa-clipboard" data-clipboard-text="Chorągiew Mazowiecka ZHP Hufiec Radom-Miasto" title="Skopiuj tekst do schowka"></i></p>
             
-            <p class="wazne" data-clipboard-text="10 1240 5703 1111 0000 4904 1143" title="Skopiuj tekst do schowka">Numer konta:</p>
-            <p> 10 1240 5703 1111 0000 4904 1143 <i class="far fa-clipboard" data-clipboard-text="10 1240 5703 1111 0000 4904 1143" title="Skopiuj tekst do schowka"></i></p>
+            <p class="wazne">Numer konta:</p>
+            <p data-clipboard-text="10 1240 5703 1111 0000 4904 1143" title="Skopiuj tekst do schowka" class="kopiuj-tekst"> 10 1240 5703 1111 0000 4904 1143 <i class="far fa-clipboard" data-clipboard-text="10 1240 5703 1111 0000 4904 1143" title="Skopiuj tekst do schowka"></i></p>
           </article>
     </main>
     <div class="ui-menu">
@@ -142,6 +143,7 @@
     <script>
         //Kopiowanie nr konta do schowka
         new ClipboardJS('.fa-clipboard');
+        new ClipboardJS('.kopiuj-tekst');
     </script>
 </body>
 </html>
