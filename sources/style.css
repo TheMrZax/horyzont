@@ -234,6 +234,11 @@
     cursor: pointer;
 }
 
+.glowna article.wsparcie p.wazne {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
 .glowna.wsparcie {
     max-width: 1024px;
     margin: 0 auto;
