@@ -62,6 +62,11 @@
     margin-bottom: 10px;
 }
 
+.podstrony-menu ol li a {
+    text-decoration: none;
+    color: white;
+}
+
 
 /* KONTAKT MENU */
 .kontakt-menu {
@@ -80,6 +85,11 @@
     border-radius: 20px 20px 0 0;
     background-color: #378243;
     transition: .4s;
+}
+
+.kontakt-menu a {
+    color: white;
+    text-decoration: none;
 }
 
 .kontakt-menu.widoczne {
@@ -123,6 +133,11 @@
     background-color: #378243;
     transition: .2s;
     padding: 20px;
+}
+
+.ui-menu a {
+    color: white;
+    text-decoration: none;
 }
 
 .icon-wrap {
@@ -177,6 +192,51 @@
     text-align: justify;
 }
 
+/* WSPARCIE.HTML */
+.glowna article.wsparcie .wrapper {
+    text-align: center;
+}
+
+.glowna article.wsparcie h2 {
+    margin: 30px 0 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #358241;
+}
+
+.glowna article.wsparcie p {
+    margin: 5px 0;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.glowna article.wsparcie img {
+    height: 140px;
+}
+
+.glowna article.wsparcie a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #358241;
+    margin-top: 5px;
+}
+
+.glowna article.wsparcie a:hover {
+    text-decoration: underline;
+}
+
+.glowna article.wsparcie i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.glowna.wsparcie {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
 
 /* HEADER MOBILE */
 .naglowek-mobile {
@@ -189,6 +249,9 @@
 .naglowek-mobile .logo-zhp-zielone {
     width: 100px;
     margin: 20px 0 0 20px;
+}
+
+.naglowek-mobile a {
     align-self: flex-start;
 }
 
@@ -299,11 +362,21 @@
         margin-bottom: 5px;
     }
 
+    footer.desktop .socialmedia p:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
     footer.desktop .socialmedia i {
         text-align: center;
         margin-right: 5px;
         width: 25px;
         font-size: 20px;
+    }
+
+    footer.desktop .socialmedia a {
+        text-decoration: none;
+        color: white;
     }
 
     footer.desktop .space-limiter {
@@ -343,6 +416,11 @@
         text-align: center;
         font-size: 20px;
         font-family: Museo300;
+    }
+
+    .naglowek-desktop a {
+        text-decoration: none;
+        color: black;
     }
 
     .naglowek-desktop nav {
@@ -413,5 +491,26 @@
     footer.desktop img {
         height: auto;
         width: 180px;
+    }
+
+    .glowna.wsparcie {
+        flex-direction: row;
+    }
+
+    .glowna.wsparcie article.wsparcie {
+        padding: 20px;
+        flex-basis: 50%;
+    }
+
+    .glowna article.wsparcie img {
+        width: 100%;
+    }
+
+    .header-wrapper h1 {
+        font-size: 30px;
+    }
+
+    .header-wrapper .logo-64 {
+        width: 120px;
     }
 }

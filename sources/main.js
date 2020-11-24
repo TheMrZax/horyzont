@@ -46,3 +46,16 @@ window.addEventListener('scroll', () => {
     document.querySelector('li.zamknij-slide-menu').addEventListener('click', ()=> {
         document.querySelector('.slide-menu').classList.remove('active');
     })
+
+//Kopiowanie tekstu do schowka
+function lastSingleLetterToNewLine(el){
+    let result;
+    el.forEach((element, i)=>{   
+        if(!element.innerHTML.match(/[{}]|<script|^\n$/gi)){
+        result = element.innerHTML.replace(/ (.) /gi, " "+'\$1'+"&nbsp");
+       }
+        element.innerHTML = result;
+    });
+}
+let el = document.querySelectorAll("h1, h2, h3, h4, h5, p, span, .text");
+lastSingleLetterToNewLine(el);
