@@ -213,6 +213,7 @@
 
 .glowna article.wsparcie img {
     height: 140px;
+    margin-top: 50px;
 }
 
 .glowna article.wsparcie a {
@@ -245,6 +246,37 @@
 
 .glowna article.wsparcie p.kopiuj-tekst:hover {
     opacity: .7;
+}
+
+.glowna article.osoba {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.glowna article.osoba img {
+    margin-top: 30px;
+    width: 200px;
+}
+
+.glowna article.osoba .nazwisko {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.glowna section.kadra h1,
+.glowna section.czlonkowie h1 {
+    margin-top: 60px;
+}
+
+/* CZLONKOWIE.HTML - CZLONKOWIE */
+.glowna section.czlonkowie {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .glowna.wsparcie {
@@ -403,7 +435,7 @@
         max-width: 1024px;
         margin: 0 auto;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
         padding: 20px;
     }
@@ -512,6 +544,7 @@
         width: 180px;
     }
 
+
     .glowna.wsparcie {
         flex-direction: row;
     }
@@ -523,6 +556,7 @@
 
     .glowna article.wsparcie img {
         width: 100%;
+        margin-top: 0;
     }
 
     .header-wrapper h1 {
@@ -531,5 +565,37 @@
 
     .header-wrapper .logo-64 {
         width: 120px;
+    }
+
+    /* CZLONKOWIE.HTML */
+    .glowna article.osoba {
+        flex-direction: row;
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .glowna article.osoba .wrap {
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .glowna section.czlonkowie {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .glowna section.czlonkowie h1 {
+        flex-basis: 100%;
+    }
+
+    .glowna section.czlonkowie img {
+        width: 150px;
+    }
+
+    .glowna section.czlonkowie article.osoba {
+        flex-basis: 50%;
+        padding: 10px;
     }
 }
