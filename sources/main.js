@@ -17,7 +17,7 @@ window.addEventListener('scroll', () => {
     } else if (aktualnaWysokoscNaStronie == window.innerHeight) {
          footer.style = "bottom: 0";
     } else {
-         footer.style = "bottom: -120%";
+         footer.style = "bottom: -200%";
     }
     wysokoscStrony = aktualnaWysokoscNaStronie
     }

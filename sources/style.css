@@ -14,8 +14,19 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(../images/bgpattern.png);
+    background-repeat: repeat;
+    background-size: auto;
+}
+
 .wazne {
     font-family: Museo500;
+}
+
+.mt {
+    display: block;
+    margin-top: 10px;
 }
 
 /* PODSTRONY MENU */
@@ -171,6 +182,15 @@
     width: 100%;
 }
 
+aside p {
+    font-size: 25px;
+    color: #358241;
+    font-family: Museo500;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 
 /* SEKCJA GLOWNA */
 .glowna {
@@ -190,6 +210,10 @@
     max-width: 850px;
     margin: 20px auto 0 auto;
     text-align: justify;
+}
+
+.glowna article ol li {
+    margin-left: 30px;
 }
 
 /* WSPARCIE.HTML */
@@ -405,7 +429,7 @@
     }
 
     footer.desktop .socialmedia {
-        margin-left: 20px;
+        margin-left: 40px;
     }
 
     footer.desktop .socialmedia p {
@@ -432,7 +456,7 @@
 
     footer.desktop .space-limiter {
         width: 100%;
-        max-width: 1024px;
+        max-width: 1200px;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -476,8 +500,8 @@
 
     .naglowek-desktop nav {
         width: 100%;
-        max-width: 1024px;
-        padding: 20px;
+        max-width: 1200px;
+        padding: 20px 0;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -485,7 +509,7 @@
     }
 
     .naglowek-desktop nav img {
-        width: 120px;
+        width: 140px;
     }
 
     .naglowek-desktop nav ol {
